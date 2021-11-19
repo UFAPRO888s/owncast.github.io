@@ -96,11 +96,11 @@ section {
 }
 
 .hero-container {
+  background-image: url(images/BG_login.jpg);
   background-color: #121421;
-  background-image: url(/images/hero-bgdecor.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -8em;
+  background-position: 0;
 
   > .container {
     margin: auto;
@@ -116,7 +116,7 @@ section {
     display: block;
     width: 100%;
     transition: opacity 0.5s;
-    aspect-ratio: 20 / 12;
+    aspect-ratio: 20 / 19;
   }
   img.splash-image-loader {
     filter: blur(1em);
@@ -485,4 +485,86 @@ section {
       }
     }
   }
+}
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box; 
+}
+
+
+
+.login {
+  
+  bottom : 0;
+  box-shadow: inset 0.1rem 0 0.3rem rgba(black,0.4),  inset -0.1rem 0 0.3rem rgba(black,0.4);
+  height: 15rem;
+  left: 0;
+  margin: auto;
+  padding: 1rem 4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25rem; 
+}
+//   &:before, &:after {
+//     background-color: #ccc;
+//     border: 0.1rem solid #444;
+//     color: #333;
+//     content: '\f023  Login';
+//     font-family: FontAwesome;    
+//     font-size: 3rem;
+//     height: 7.5rem;
+//     line-height: 1;  
+//     left: 0;
+//     overflow: hidden;
+//     position: absolute;
+//     text-align: center;
+//     text-transform: uppercase;
+//     transition: 0.5s all ease-in-out;
+//     width: 100%;
+//     z-index: 10;
+//   }
+// &:before {
+//   border-bottom: 0;
+//   line-height: 4.95;
+//   top: 0; 
+// }
+// &:after {
+//   border-top:0;
+//   bottom: 0; 
+//   line-height: 0;
+// }
+// }
+
+.login:hover {
+  &:after {
+    bottom: -7.5rem; 
+    box-shadow: 0 -0.5rem 0.45rem -0.25rem rgba(black,0.2);    
+  }
+&:before {
+  top: -7.5rem;
+  box-shadow: 0 0.5rem 0.45rem -0.25rem rgba(black,0.2);
+}
+}
+
+input {
+  height: 3rem;
+  outline: none;  
+  width: 100%;    
+}
+
+input[type="password"], input[type="email"] {
+  background: rgba(black,0.2);
+  border: 0;
+  color: #fff;
+  margin: 0.5rem auto;
+  padding: 1rem;
+}
+
+input[type="submit"] {
+  background-image:  #ccc;
+  border: 0;
+  margin: 1rem auto;
 }

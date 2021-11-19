@@ -1,15 +1,48 @@
 {{ define "main" }}
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <section class="section hero-container">
   <div class="container row justify-content-center align-items-center">
+    <img class="" src="images/logo-pro-2.png" width="60%" style="margin-bottom: -20%;margin-top: -10%;"> 
+    
+   
     <figure class="hero-image-container col-lg-9 col-md-16">
-      <img src="/images/owncast-splash-loading.png" alt="" class="splash-image splash-image-loader" id="splash-image-loader" />
-      <img src="/images/owncast-splash.png" alt="Owncast on desktop and mobile" class="splash-image" loading="lazy" onLoad="handleHeroImageLoad()" id="splash-image-main" />
-    </figure>
 
-    <div class="intro col-lg-7 col-md-16">
-      <p class="lead">Owncast is a self-hosted live video and web chat server for use with existing popular broadcasting software.</p>
+     
+      <img src="images/button/1.png" width="100%" loading="lazy" onLoad="handleHeroImageLoad()" />
+
+      <form class="login">
+        <input type="email" placeholder="UFA ID" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"/>
+        <input type="password"  placeholder="TOKEN" pattern="[^0-9][A-Za-z]{2,20}"/>
+        
+        <input type="image" id="image" alt="Login" src="images/button/4.png" style="position: absolute;width: 70%;height: 40%;margin-top:15%;margin-left: -68%">
+      </form>
+      <!-- <img src="/images/button/1.png" height="450px" alt="UFAPRO888S JACKPORTS" class="splash-image splash-image-loader" id="splash-image-loader" />
+      <img src="/images/button/1.png" height="450px" alt="UFAPRO888S JACKPORTS MOBILE" class="splash-image" loading="lazy" onLoad="handleHeroImageLoad()" id="splash-image-main"  /> -->
+    </figure>
+      
+   
+      <!--<input type="image" id="" alt="Login" src="images/button/4.png" style="position: absolute; margin-top: -265px; margin-left: 146px;"> -->
+   
+
+    <!-- <form name="formlogin" action="checkuser.php" method="POST" id="login">
+      <div class="boxuser"><img src="images/button/1.png" width="80%" /></div>
+      <div class="Absolute-Center">
+      <div class="form-group input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input class="form-control" type="text" name='password' placeholder="UFAID"/>          
+      </div>
+      <div class="form-group input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input class="form-control" class="token" type="text" name='username' placeholder="TOKEN" onkeyup="showHint(this.value)" />     
+      </div>
+      </div>
+      <input type="image" id="image" alt="Login" src="images/button/4.png" style="margin-top: -165px;">
+    </form> -->
+    <!-- <div class="intro col-lg-7 col-md-16">
+      <p class="lead">UFAX LIVE.</p>
       <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "quickstart/" | absURL }}" role="button">Get started</a>
-    </div>
+    </div> -->
   </div>
   <script>
     //
@@ -33,7 +66,7 @@
 </section>
 
 <!-- 4 key points section -->
-<section class="section key-points-container">
+<!-- <section class="section key-points-container">
   <div class="container row justify-content-center">
     <div class="row justify-content-center text-center col-lg-8 col-sm-16">
       <div class="col-md-8 col-sm-16 key-point-item">
@@ -69,35 +102,35 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
 <!-- Quotes & testimonials section -->
-<section class="section quotes-container">
+<!-- <section class="section quotes-container">
   <div class="container row justify-content-center">
     <div id="quote1" class="col-md-8 col-sm-16"></div>
     <div id="quote2" class="col-md-8 col-sm-16"></div> 
   </div>
   <a id="blogs-link" href="/examples/blogs-tutorials/">See how others are using Owncast and what they're saying.</a>
-</section>
+</section> -->
 
 <!-- Live now from Directory section -->
-<section id="container-live-now" class="section text-center live-now-container">
+<!-- <section id="container-live-now" class="section text-center live-now-container">
   <h2>Streams live right now</h2>
-  <p>Visit the <a href="https://directory.owncast.online">Owncast Directory</a> to discover more streams.</p>
+  <p>Visit the <a href="#">UFAX LIVE</a> ดูสด ที่นี่.</p>
   <div class="stream-list-holder scrollbar-hidden">
     <ul id="stream-list" role="list">
     </ul>
   </div>
-</section>
+</section> -->
 {{ end }}
 
 {{ define "sidebar-footer" }}
 <!-- Contributors list Section -->
-<section class="section container-contributors text-center contributors-container">
+<!-- <section class="section container-contributors text-center contributors-container">
   {{- .Content -}}
-</section>
+</section> -->
 
 {{ end }}
